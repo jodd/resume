@@ -12,60 +12,52 @@ module.exports = {
     entry: './src/index.js',
     module: {
         rules: [
-        {
-            test: /\.css$/,
-            use: [
-                'style-loader',
-                {
-                    loader: 'css-loader',
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
+            },
+            {
+                test: /\.md$/,
+                use: ['html-loader', {
+                    loader: 'markdown-loader',
                     options: {
-                        importLoaders: 1
+                        breaks: true
                     }
-                },
-                'postcss-loader'
-            ]
-        },
-        {
-            test: /\.md$/,
-            use: ['html-loader', {
-                loader: 'markdown-loader',
-                options: {
-                    breaks: true
+                }]
+            },
+            {
+                test: /\.html$/,
+                use: {
+                    loader: 'html-loader',
+                    options: {
+                        interpolate: true
+                    }
                 }
-            }]
-        },
-        {
-            test: /\.html$/,
-            use: {
-                loader: 'html-loader',
-                options: {
-                    interpolate: true
-                }
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: ['file-loader']
+            },
+            {
+                test: /\.svg$/,
+                include: path.resolve('./src/img/icons'),
+                use: [
+                    {
+                        loader: 'svg-sprite-loader',
+                    },
+                    {
+                        loader: 'svgo-loader',
+                        options: {
+                            plugins: [
+                                { removeTitle: true },
+                                { convertColors: { shorthex: false }},
+                                { convertPathData: false }
+                            ]
+                        }
+                    }
+                ]
             }
-        },
-        {
-            test: /\.(png|jpg|gif)$/,
-            use: ['file-loader']
-        },
-        {
-            test: /\.svg$/,
-            include: path.resolve('./src/img/icons'),
-            use: [
-                {
-                    loader: 'svg-sprite-loader',
-                },
-                {
-                    loader: 'svgo-loader',
-                    options: {
-                        plugins: [
-                            { removeTitle: true },
-                            { convertColors: { shorthex: false }},
-                            { convertPathData: false }
-                        ]
-                    }
-                }
-            ]
-        }
         ]
     },
     resolve: {
