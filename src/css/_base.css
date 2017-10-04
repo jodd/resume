@@ -1,0 +1,145 @@
+/*! HTML5 Boilerplate v6.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: silver;
+    background: url(data:image/png;base64,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);
+    background-color: rgb(54,54,54);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+a {
+    color: chocolate;
+    transition: color .2s;
+}
+
+a:--enter {
+    color: darkorange;
+}
+
+p {
+    margin: 0;
+}
+
+p + p {
+    margin-top: 1em;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   App base styles
+   ========================================================================== */
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 1.8em 0 .9em;
+}
+
+time {
+    font-size: .81rem;
+    font-family: 'Open Sans';
+    color: grey;
+}
+
+:--icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+}
+
+.icon-mail {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.icon-graduation-cap {
+    width: 1.5em;
+}
+
+.link-icon {
+    text-decoration: none;
+    color: darkgrey;
+    border-bottom: 0;
+}
+
+.link-icon > :--icon {
+    font-size: 2.4rem;
+    line-height: 1;
+}
