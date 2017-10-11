@@ -1,0 +1,89 @@
+/* ==========================================================================
+    Header styles
+   ========================================================================== */
+
+@import '../../css/_vars.css';
+
+[role="banner"] {
+    max-width: var(--col-width);
+    padding: var(--gutter) 0;
+    margin: 0 auto;
+    @media (--medium-screen) {
+        position: fixed;
+        top: 0;
+        left: var(--gutter);
+        width: var(--col-width);
+        margin: inherit;
+        overflow-y: auto;
+        max-height: 100%;
+        -webkit-overflow-scrolling: touch;
+    }
+    @media (--large-screen) {
+        left: var(--gutter);
+    }
+    @media (--max-width) {
+        left: calc(50% - var(--max-width) / 2 + var(--gutter));
+    }
+}
+
+[role="banner"] > div:first-child {
+    text-align: center;
+}
+
+[role="banner"] h1 {
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: .15em;
+}
+
+[role="banner"] h1 > span {
+    display: inline-block;
+    text-align: left;
+}
+
+[role="banner"] > div:first-child img {
+    width: 150px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.45);
+}
+
+[role="banner"] > div:first-child strong {
+    color: darkgrey;
+    font-size: 1.5em;
+}
+
+[role="banner"] > div:nth-child(2) {
+    @apply --border-top-gradient;
+    padding-top: .6rem;
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+[role="banner"] > div:nth-child(2) > div {
+    display: inline-block;
+    text-align: left;
+    padding-left: 2.4em;
+}
+
+[role="banner"] > div:nth-child(2) p {
+    position: relative;
+    margin: .6em 0;
+}
+
+[role="banner"] > div:nth-child(2) :--icon {
+    position: absolute;
+    top: .3em;
+    left: -1.8em;
+}
+
+[role="banner"] > div:nth-child(3) {
+    @apply --border-top-gradient;
+    text-align: center;
+    margin-top: 1.2rem;
+    padding: 1.5rem 0 .6rem;
+}
+
+[role="banner"] > div:nth-child(3) a + a {
+    margin-left: 1.8rem;
+}

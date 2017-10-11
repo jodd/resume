@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+@import '../../css/_vars.css';
+
+body:before {
+    display: none;
+    @media (--small-screen) {
+        content: 'small';
+    }
+    @media (--medium-screen) {
+        content: 'medium';
+    }
+    @media (--large-screen) {
+        content: 'large';
+    }
+    @media (--max-width) {
+        content: 'max-width';
+    }
+}

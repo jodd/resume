@@ -60,7 +60,7 @@ module.exports = {
         ]
     },
     resolve: {
-        modules: [path.resolve(__dirname, 'src/modules'), 'node_modules']
+        modules: [path.resolve(__dirname, 'src/components'), 'node_modules']
     },
     plugins: [
         new HtmlWebpackPlugin({

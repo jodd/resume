@@ -1,0 +1,99 @@
+/* ==========================================================================
+    Nav styles
+   ========================================================================== */
+
+@import '../../css/_vars.css';
+
+.side-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(75,75,75);
+    box-shadow: 0 0 9px rgba(0,0,0,.3);
+    transition: transform .3s;
+    @media (--large-screen) {
+        width: var(--small-col-width);
+        top: calc(var(--gutter));
+        left: calc(100% - var(--small-col-width) - var(--gutter));
+        bottom: inherit;
+        box-shadow: none;
+        padding: .9em 1.2em;
+        transition: none;
+    }
+    @media (--max-width) {
+        left: calc(50% + var(--max-width) / 2 - var(--small-col-width) - var(--gutter));
+    }
+}
+
+.side-nav.offscreen {
+    transform: translateY(calc(100% + 9px));
+}
+
+.side-nav ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 0;
+    text-align: center;
+    @media (--large-screen) {
+        font-size: inherit;
+        text-align: left;
+    }
+}
+
+.side-nav ol > li {
+    display: inline-block;
+    width: 25%;
+    line-height: 1;
+    @media (--large-screen) {
+        display: list-item;
+        width: auto;
+        & + li {
+            margin-top: .6em;
+        }
+    }
+}
+
+.side-nav a {
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 100%;
+    color: silver;
+    padding: .3em;
+    text-decoration: none;
+    &:--enter {
+        color: darkorange;
+    }
+    @media (--medium-screen) {
+        font-size: 1.35rem;
+        padding: .45em;
+    }
+    @media (--large-screen) {
+        position: relative;
+        padding: .3em 0 .3em 2.1em;
+    }
+}
+
+.side-nav a span {
+    display: block;
+    font-size: .6rem;
+    margin-top: .6em;
+    @media (--medium-screen) {
+        display: inherit;
+        font-size: 1rem;
+        margin: 0 0 0 .3em;
+        vertical-align: .09em;
+    }
+    @media (--large-screen) {
+        margin: 0;
+    }
+}
+
+.side-nav :--icon {
+    @media (--large-screen) {
+        position: absolute;
+        left: .6em;
+        transform: translateX(-50%);
+    }
+}

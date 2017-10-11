@@ -4,9 +4,9 @@
 
 /* Load resources
    -------------------------------------------------------------------------- */
-import './css/main.css'
-import Nav from './js/nav'
-import Header from './js/header'
+import './css/index.css'
+import Nav from 'nav'
+import Header from 'header'
 
 // load icons
 ( icons => icons.keys().forEach( icons ))(
