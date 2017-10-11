@@ -1,3 +1,3 @@
-# jodd.github.io/resume
+# Résumé
 
-My résumé : [jodd.github.io/resume](https://jodd.github.io/resume/)
+Source code of my online résumé [jodd.github.io/resume](https://jodd.github.io/resume/)
