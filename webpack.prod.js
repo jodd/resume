@@ -30,7 +30,7 @@ module.exports = merge(common, {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['build']),
         new ExtractTextPlugin('styles.css'),
         new UglifyJSPlugin(),
         new webpack.DefinePlugin({
