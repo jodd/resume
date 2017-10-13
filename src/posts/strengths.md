@@ -1,4 +1,4 @@
 ### Mes points forts :
-- bon communiquant
+- bon communicant
 - goût du travail bien fait
 - forte capacité d'adaptation

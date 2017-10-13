@@ -147,7 +147,7 @@ export default props => (
                             1 an 3 mois
                         </p>
                         <ul>
-                            <li>interface de l'espace presse des chaines du groupe Canal+</li>
+                            <li>interface de l'espace presse des chaînes du groupe Canal+</li>
                             <li>interface de l'espace presse de La Poste</li>
                             <li>mission chez SFR pour l'intégration de pages statiques sur la boutique en ligne</li>
                         </ul>
