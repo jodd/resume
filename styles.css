@@ -293,164 +293,6 @@ time {
     }
 }
 
-/* header
-   -------------------------------------------------------------------------- */
-
-[role="banner"] {
-    max-width: 300px;
-    padding: 30px 0;
-    margin: 0 auto;
-}
-
-@media only screen and (min-width: 768px) {
-
-    [role="banner"] {
-        position: fixed;
-        top: 0;
-        left: 30px;
-        width: 300px;
-        margin: inherit;
-        overflow-y: auto;
-        max-height: 100%;
-        -webkit-overflow-scrolling: touch;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-
-    [role="banner"] {
-        left: 30px;
-    }
-}
-
-@media only screen and (min-width: 1320px) {
-
-    [role="banner"] {
-        left: calc(50% - 630px);
-    }
-}
-
-[role="banner"] > div:first-child {
-    text-align: center;
-}
-
-[role="banner"] h1 {
-    font-weight: 800;
-    font-style: italic;
-    line-height: 1;
-    text-transform: uppercase;
-    margin-bottom: .15em;
-}
-
-[role="banner"] h1 > span {
-    display: inline-block;
-    text-align: left;
-}
-
-[role="banner"] > div:first-child img {
-    width: 150px;
-    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .45);
-            box-shadow: 0 1px 6px rgba(0, 0, 0, .45);
-}
-
-[role="banner"] > div:first-child strong {
-    color: darkgrey;
-    font-size: 1.5em;
-}
-
-[role="banner"] > div:nth-child(2) {
-  position: relative;
-  border-top: 2px solid transparent;
-}
-
-[role="banner"] > div:nth-child(2):before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(0, 0, 0, .45)), color-stop(rgba(0, 0, 0, .45)), to(transparent));
-    background: linear-gradient(to right, transparent, rgba(0, 0, 0, .45), rgba(0, 0, 0, .45), transparent);
-}
-
-[role="banner"] > div:nth-child(2):after {
-    content: '';
-    position: absolute;
-    top: 1px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, .09)), color-stop(rgba(255, 255, 255, .09)), to(transparent));
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, .09), rgba(255, 255, 255, .09), transparent);
-}
-
-[role="banner"] > div:nth-child(2) {
-    padding-top: 9.6px;
-    padding-top: .6rem;
-    margin-top: 19.2px;
-    margin-top: 1.2rem;
-    text-align: center;
-}
-
-[role="banner"] > div:nth-child(2) > div {
-    display: inline-block;
-    text-align: left;
-    padding-left: 2.4em;
-}
-
-[role="banner"] > div:nth-child(2) p {
-    position: relative;
-    margin: .6em 0;
-}
-
-[role="banner"] > div:nth-child(2) [class^='icon-'],
-[role="banner"] > div:nth-child(2) [class*=' icon-'] {
-    position: absolute;
-    top: .3em;
-    left: -1.8em;
-}
-
-[role="banner"] > div:nth-child(3) {
-  position: relative;
-  border-top: 2px solid transparent;
-}
-
-[role="banner"] > div:nth-child(3):before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(0, 0, 0, .45)), color-stop(rgba(0, 0, 0, .45)), to(transparent));
-    background: linear-gradient(to right, transparent, rgba(0, 0, 0, .45), rgba(0, 0, 0, .45), transparent);
-}
-
-[role="banner"] > div:nth-child(3):after {
-    content: '';
-    position: absolute;
-    top: 1px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, .09)), color-stop(rgba(255, 255, 255, .09)), to(transparent));
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, .09), rgba(255, 255, 255, .09), transparent);
-}
-
-[role="banner"] > div:nth-child(3) {
-    text-align: center;
-    margin-top: 19.2px;
-    margin-top: 1.2rem;
-    padding: 24px 0 9.6px;
-    padding: 1.5rem 0 .6rem;
-}
-
-[role="banner"] > div:nth-child(3) a + a {
-    margin-left: 28.8px;
-    margin-left: 1.8rem;
-}
-
 /* main
    -------------------------------------------------------------------------- */
 
@@ -481,150 +323,6 @@ time {
 
     [role="main"] {
         max-width: 660px;
-    }
-}
-
-/* Nav
-   ----------------- */
-
-.side-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(75, 75, 75);
-    -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, .3);
-            box-shadow: 0 0 9px rgba(0, 0, 0, .3);
-    -webkit-transition: -webkit-transform .3s;
-    transition: -webkit-transform .3s;
-    transition: transform .3s;
-    transition: transform .3s, -webkit-transform .3s;
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .side-nav {
-        width: 240px;
-        top: 30px;
-        left: calc(100% - 270px);
-        bottom: inherit;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        padding: .9em 1.2em;
-        -webkit-transition: none;
-        transition: none;
-    }
-}
-
-@media only screen and (min-width: 1320px) {
-
-    .side-nav {
-        left: calc(50% + 390px);
-    }
-}
-
-.side-nav.offscreen {
-    -webkit-transform: translateY(calc(100% + 9px));
-            transform: translateY(calc(100% + 9px));
-}
-
-.side-nav ol {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-    font-size: 0;
-    text-align: center;
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .side-nav ol {
-        font-size: inherit;
-        text-align: left;
-    }
-}
-
-.side-nav ol > li {
-    display: inline-block;
-    width: 25%;
-    line-height: 1;
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .side-nav ol > li {
-        display: list-item;
-        width: auto;
-    }
-
-    .side-nav ol > li + li {
-        margin-top: .6em;
-    }
-}
-
-.side-nav a {
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    display: inline-block;
-    width: 100%;
-    color: silver;
-    padding: .3em;
-    text-decoration: none
-}
-
-.side-nav a:hover,
-.side-nav a:focus {
-    color: darkorange;
-}
-
-@media only screen and (min-width: 768px) {
-
-    .side-nav a {
-        font-size: 1.35rem;
-        padding: .45em;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .side-nav a {
-        position: relative;
-        padding: .3em 0 .3em 2.1em;
-    }
-}
-
-.side-nav a span {
-    display: block;
-    font-size: 9.6px;
-    font-size: .6rem;
-    margin-top: .6em;
-}
-
-@media only screen and (min-width: 768px) {
-
-    .side-nav a span {
-        display: inherit;
-        font-size: 1rem;
-        margin: 0 0 0 .3em;
-        vertical-align: .09em;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .side-nav a span {
-        margin: 0;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .side-nav [class^='icon-'],
-.side-nav [class*=' icon-'] {
-        position: absolute;
-        left: .6em;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
     }
 }
 
@@ -676,7 +374,6 @@ time {
 
 .section-heading > span {
     display: inline-block;
-    letter-spacing: -1px;
     padding: 0 .15em;
     background-color: darkgrey;
 }
@@ -783,23 +480,6 @@ time {
 
 .time-range > .icon-clock {
     margin: 0 .3em 0 .9em;
-}
-
-/* Footer
-   -------------------------------------------------------------------------- */
-
-[role="contentinfo"] {
-    background-color: rgb(36, 36, 36);
-    padding: 30px;
-    margin: 90px -30px 0;
-    text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-
-    [role="contentinfo"] {
-        margin: 90px 0 0;
-    }
 }
 
 /* ==========================================================================
@@ -951,5 +631,442 @@ body:before {
 
     body:before {
         content: 'max-width';
+    }
+}/* ==========================================================================
+    Nav styles
+   ========================================================================== */
+
+/* ==========================================================================
+    Application variables and properties
+   ========================================================================== */
+
+:root {
+
+    /* Colors
+       ---------------------------------------------------------------------- */
+
+    /* social */
+
+    /* Grid
+       ---------------------------------------------------------------------- */
+
+    /* Helpers (custom properties version)
+       ---------------------------------------------------------------------- */
+
+    /* Vertical centering technique
+       ---------------------------------------------------------------------- */
+
+    /* Decorations
+       ---------------------------------------------------------------------- */
+}
+
+/* Custom selectors
+   -------------------------------------------------------------------------- */
+
+/* Custom Media Queries (mobile first approach)
+   -------------------------------------------------------------------------- */
+
+/**
+ * Usage :
+ *
+ * .my-class-selector {
+ *      @media (--medium-screen) {
+ *          [style properties here for medium+ screens]
+ *      }
+ *  }
+ */
+
+.side-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(75, 75, 75);
+    -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, .3);
+            box-shadow: 0 0 9px rgba(0, 0, 0, .3);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .side-nav {
+        width: 240px;
+        top: 30px;
+        left: calc(100% - 270px);
+        bottom: inherit;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        padding: .9em 1.2em;
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+
+@media only screen and (min-width: 1320px) {
+
+    .side-nav {
+        left: calc(50% + 390px);
+    }
+}
+
+.side-nav.offscreen {
+    -webkit-transform: translateY(calc(100% + 9px));
+            transform: translateY(calc(100% + 9px));
+}
+
+.side-nav ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .side-nav ol {
+        font-size: inherit;
+        text-align: left;
+    }
+}
+
+.side-nav ol > li {
+    display: inline-block;
+    width: 25%;
+    line-height: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .side-nav ol > li {
+        display: list-item;
+        width: auto;
+    }
+
+    .side-nav ol > li + li {
+        margin-top: .6em;
+    }
+}
+
+.side-nav a {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 100%;
+    color: silver;
+    padding: .3em;
+    text-decoration: none
+}
+
+.side-nav a:hover,
+.side-nav a:focus {
+    color: darkorange;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .side-nav a {
+        font-size: 1.35rem;
+        padding: .45em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .side-nav a {
+        position: relative;
+        padding: .3em 0 .3em 2.1em;
+    }
+}
+
+.side-nav a span {
+    display: block;
+    font-size: 9.6px;
+    font-size: .6rem;
+    margin-top: .6em;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .side-nav a span {
+        display: inherit;
+        font-size: 1rem;
+        margin: 0 0 0 .3em;
+        vertical-align: .09em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .side-nav a span {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .side-nav [class^='icon-'],
+.side-nav [class*=' icon-'] {
+        position: absolute;
+        left: .6em;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+}/* ==========================================================================
+    Header styles
+   ========================================================================== */
+
+/* ==========================================================================
+    Application variables and properties
+   ========================================================================== */
+
+:root {
+
+    /* Colors
+       ---------------------------------------------------------------------- */
+
+    /* social */
+
+    /* Grid
+       ---------------------------------------------------------------------- */
+
+    /* Helpers (custom properties version)
+       ---------------------------------------------------------------------- */
+
+    /* Vertical centering technique
+       ---------------------------------------------------------------------- */
+
+    /* Decorations
+       ---------------------------------------------------------------------- */
+}
+
+/* Custom selectors
+   -------------------------------------------------------------------------- */
+
+/* Custom Media Queries (mobile first approach)
+   -------------------------------------------------------------------------- */
+
+/**
+ * Usage :
+ *
+ * .my-class-selector {
+ *      @media (--medium-screen) {
+ *          [style properties here for medium+ screens]
+ *      }
+ *  }
+ */
+
+[role="banner"] {
+    max-width: 300px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+    [role="banner"] {
+        position: fixed;
+        top: 0;
+        left: 30px;
+        width: 300px;
+        margin: inherit;
+        overflow-y: auto;
+        max-height: 100%;
+        -webkit-overflow-scrolling: touch;
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    [role="banner"] {
+        left: 30px;
+    }
+}
+
+@media only screen and (min-width: 1320px) {
+
+    [role="banner"] {
+        left: calc(50% - 630px);
+    }
+}
+
+[role="banner"] > div:first-child {
+    text-align: center;
+}
+
+[role="banner"] h1 {
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: .15em;
+}
+
+[role="banner"] h1 > span {
+    display: inline-block;
+    text-align: left;
+}
+
+[role="banner"] > div:first-child img {
+    width: 150px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .45);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, .45);
+}
+
+[role="banner"] > div:first-child strong {
+    color: darkgrey;
+    font-size: 1.5em;
+}
+
+[role="banner"] > div:nth-child(2) {
+  position: relative;
+  border-top: 2px solid transparent;
+}
+
+[role="banner"] > div:nth-child(2):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(0, 0, 0, .45)), color-stop(rgba(0, 0, 0, .45)), to(transparent));
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, .45), rgba(0, 0, 0, .45), transparent);
+}
+
+[role="banner"] > div:nth-child(2):after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, .09)), color-stop(rgba(255, 255, 255, .09)), to(transparent));
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, .09), rgba(255, 255, 255, .09), transparent);
+}
+
+[role="banner"] > div:nth-child(2) {
+    padding-top: 9.6px;
+    padding-top: .6rem;
+    margin-top: 19.2px;
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+[role="banner"] > div:nth-child(2) > div {
+    display: inline-block;
+    text-align: left;
+    padding-left: 2.4em;
+}
+
+[role="banner"] > div:nth-child(2) p {
+    position: relative;
+    margin: .6em 0;
+}
+
+[role="banner"] > div:nth-child(2) [class^='icon-'],
+[role="banner"] > div:nth-child(2) [class*=' icon-'] {
+    position: absolute;
+    top: .3em;
+    left: -1.8em;
+}
+
+[role="banner"] > div:nth-child(3) {
+  position: relative;
+  border-top: 2px solid transparent;
+}
+
+[role="banner"] > div:nth-child(3):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(0, 0, 0, .45)), color-stop(rgba(0, 0, 0, .45)), to(transparent));
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, .45), rgba(0, 0, 0, .45), transparent);
+}
+
+[role="banner"] > div:nth-child(3):after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, .09)), color-stop(rgba(255, 255, 255, .09)), to(transparent));
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, .09), rgba(255, 255, 255, .09), transparent);
+}
+
+[role="banner"] > div:nth-child(3) {
+    text-align: center;
+    margin-top: 19.2px;
+    margin-top: 1.2rem;
+    padding: 24px 0 9.6px;
+    padding: 1.5rem 0 .6rem;
+}
+
+[role="banner"] > div:nth-child(3) a + a {
+    margin-left: 28.8px;
+    margin-left: 1.8rem;
+}/* ==========================================================================
+    Footer styles
+   ========================================================================== */
+
+/* ==========================================================================
+    Application variables and properties
+   ========================================================================== */
+
+:root {
+
+    /* Colors
+       ---------------------------------------------------------------------- */
+
+    /* social */
+
+    /* Grid
+       ---------------------------------------------------------------------- */
+
+    /* Helpers (custom properties version)
+       ---------------------------------------------------------------------- */
+
+    /* Vertical centering technique
+       ---------------------------------------------------------------------- */
+
+    /* Decorations
+       ---------------------------------------------------------------------- */
+}
+
+/* Custom selectors
+   -------------------------------------------------------------------------- */
+
+/* Custom Media Queries (mobile first approach)
+   -------------------------------------------------------------------------- */
+
+/**
+ * Usage :
+ *
+ * .my-class-selector {
+ *      @media (--medium-screen) {
+ *          [style properties here for medium+ screens]
+ *      }
+ *  }
+ */
+
+[role="contentinfo"] {
+    background-color: rgb(36, 36, 36);
+    padding: 30px;
+    margin: 90px -30px 0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+    [role="contentinfo"] {
+        margin: 90px 0 0;
     }
 }
