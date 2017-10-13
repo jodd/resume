@@ -688,6 +688,7 @@ body:before {
     transition: -webkit-transform .3s;
     transition: transform .3s;
     transition: transform .3s, -webkit-transform .3s;
+    z-index: 1;
 }
 
 @media only screen and (min-width: 1024px) {
