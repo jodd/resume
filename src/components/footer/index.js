@@ -1,15 +1,15 @@
 /* ==========================================================================
-    App
+    Footer
    ========================================================================== */
 
 /* Load resources
    -------------------------------------------------------------------------- */
-import ReactDOM from 'react-dom'
-import App from './app'
+import './index.css'
 
-/* Render app
-   -------------------------------------------------------------------------- */
-ReactDOM.render(
-    <App />,
-    document.getElementById( 'root' )
+/* -------------------------------------------------------------------------- */
+
+export default props => (
+    <footer role="contentinfo">
+        Crédit pictos <a href="https://icomoon.io/">icomoon</a>
+    </footer>
 )

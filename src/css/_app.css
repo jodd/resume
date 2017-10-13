@@ -141,15 +141,3 @@
 .time-range > .icon-clock {
     margin: 0 .3em 0 .9em;
 }
-
-/* Footer
-   -------------------------------------------------------------------------- */
-[role="contentinfo"] {
-    background-color: rgb(36,36,36);
-    padding: var(--gutter);
-    margin: calc(var(--gutter) * 3) -var(--gutter) 0;
-    text-align: center;
-    @media (--medium-screen) {
-        margin: calc(var(--gutter) * 3) 0 0;
-    }
-}

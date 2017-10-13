@@ -17,6 +17,7 @@
         overflow-y: auto;
         max-height: 100%;
         -webkit-overflow-scrolling: touch;
+        z-index: 1;
     }
     @media (--large-screen) {
         left: var(--gutter);

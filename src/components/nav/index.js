@@ -2,30 +2,20 @@
     Nav
    ========================================================================== */
 
+/* Load resources
+   -------------------------------------------------------------------------- */
 import './index.css'
 
-/* Globals
-   -------------------------------------------------------------------------- */
-const defaults = {}
+/* -------------------------------------------------------------------------- */
 const W = window
 const D = document
 const B = D.documentElement
 
-/* -------------------------------------------------------------------------- */
-/**
- * Module definition
- */
-export default ( element, options = {} ) => {
-
-const opts = Object.assign( {}, defaults, options )
-
-const nav = element
-const page = D.querySelector( '.page' )
-const scrollHandler = throttle( onScroll, 30 ) // used to bind/unbind the onScroll func to the scroll event
-
-let windowWidth = W.innerWidth // used to check if the window width has changed on resize
-let windowHeight = W.innerHeight // used to check if the window height has changed on resize
+let nav
+let page
 let scrollTop = W.pageYOffset // used to store the window scroll position
+
+const scrollHandler = throttle( onScroll, 30 ) // used to bind/unbind the onScroll func to the scroll event
 
 /**
  * Make space on the bottom of the page to prevent the nav from displaying on
@@ -49,6 +39,11 @@ function onResize() {
 
 }
 
+/**
+ * The navbar toggles on scroll :
+ *   displays on scrolling up, hides on scrolling down
+ *
+ */
 function onScroll() {
 
     const scrollDiff = W.pageYOffset - scrollTop
@@ -63,23 +58,48 @@ function onScroll() {
     scrollTop = W.pageYOffset
 }
 
+/*
+ * Init component
+ */
+function init( element ) {
 
+    nav = element
+    page = D.querySelector( '.page' )
+
+    W.addEventListener( 'resized', onResize )
+
+    onResize()
+}
 
 /* -------------------------------------------------------------------------- */
-/*
- * Init
- */
 
-// debounce the resize handler
-W.addEventListener( 'resize', debounce( e => {
-    // exit if the window size hasnt changed
-    if ( windowWidth === W.innerWidth && windowHeight === W.innerHeight ) return
-    (( windowWidth = W.innerWidth ) && ( windowHeight = W.innerHeight ))
-        && onResize()
-}, 300 ))
-
-onResize()
-
-return {}
-
-}
+export default props => (
+    <nav className="side-nav offscreen" role="navigation" ref={ el => init( el )}>
+        <ol>
+            <li>
+                <a href="#intro">
+                    <svg className="icon-profile" aria-hidden="true"><use xlinkHref="#profile"></use></svg>
+                    <span>Présentation</span>
+                </a>
+            </li>
+            <li>
+                <a href="#background">
+                    <svg className="icon-graduation-cap" aria-hidden="true"><use xlinkHref="#graduation-cap"></use></svg>
+                    <span>Formation</span>
+                </a>
+            </li>
+            <li>
+                <a href="#experience">
+                    <svg className="icon-briefcase" aria-hidden="true"><use xlinkHref="#briefcase"></use></svg>
+                    <span>Expérience</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills">
+                    <svg className="icon-tools" aria-hidden="true"><use xlinkHref="#tools"></use></svg>
+                    <span>Compétences</span>
+                </a>
+            </li>
+        </ol>
+    </nav>
+)

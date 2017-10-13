@@ -26,21 +26,12 @@ module.exports = {
                 }]
             },
             {
-                test: /\.html$/,
-                use: {
-                    loader: 'html-loader',
-                    options: {
-                        interpolate: true
-                    }
-                }
-            },
-            {
                 test: /\.(png|jpg|gif)$/,
                 use: ['file-loader']
             },
             {
                 test: /\.svg$/,
-                include: path.resolve('./src/img/icons'),
+                include: path.resolve('./src/icons'),
                 use: [
                     {
                         loader: 'svg-sprite-loader',
@@ -68,6 +59,7 @@ module.exports = {
         }),
         new SpriteLoaderPlugin(),
         new webpack.ProvidePlugin({
+            React: ['react'],
             debounce: ['lodash', 'debounce'],
             throttle: ['lodash', 'throttle'],
             breakpoint: ['breakpoint', 'default']
