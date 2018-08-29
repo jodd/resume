@@ -15,7 +15,7 @@ let nav
 let page
 let scrollTop = W.pageYOffset // used to store the window scroll position
 
-const scrollHandler = throttle( onScroll, 30 ) // used to bind/unbind the onScroll func to the scroll event
+const scrollHandler = throttle(onScroll, 30) // used to bind/unbind the onScroll func to the scroll event
 
 /**
  * Make space on the bottom of the page to prevent the nav from displaying on
@@ -23,20 +23,14 @@ const scrollHandler = throttle( onScroll, 30 ) // used to bind/unbind the onScro
  */
 function onResize() {
 
-    if ( breakpoint( 'medium' )) {
-
+    if (breakpoint('medium')) {
         page.style.paddingBottom = nav.offsetHeight + 'px'
-
-        W.addEventListener( 'scroll', scrollHandler )
-
+        W.addEventListener('scroll', scrollHandler)
     } else {
-
-        nav.classList.remove( 'offscreen' )
-        page.style.removeProperty( 'padding-bottom' )
-
-        W.removeEventListener( 'scroll', scrollHandler )
+        nav.classList.remove('offscreen')
+        page.style.removeProperty('padding-bottom')
+        W.removeEventListener('scroll', scrollHandler)
     }
-
 }
 
 /**
@@ -48,11 +42,11 @@ function onScroll() {
 
     const scrollDiff = W.pageYOffset - scrollTop
 
-    if ( scrollDiff < 0 ||
+    if (scrollDiff < 0 ||
         W.pageYOffset + W.innerHeight >= B.offsetHeight - nav.offsetHeight ) {
-        nav.classList.remove( 'offscreen' )
-    } else {
-        nav.classList.add( 'offscreen' )
+        nav.classList.remove('offscreen')
+    } else if (scrollDiff < 100) {
+        nav.classList.add('offscreen')
     }
 
     scrollTop = W.pageYOffset
@@ -64,9 +58,9 @@ function onScroll() {
 function init( element ) {
 
     nav = element
-    page = D.querySelector( '.page' )
+    page = D.querySelector('.page')
 
-    W.addEventListener( 'resized', onResize )
+    W.addEventListener('resized', onResize)
 
     onResize()
 }
@@ -98,6 +92,12 @@ export default props => (
                 <a href="#skills">
                     <svg className="icon-tools" aria-hidden="true"><use xlinkHref="#tools"></use></svg>
                     <span>Compétences</span>
+                </a>
+            </li>
+            <li>
+                <a href="#interests">
+                    <svg className="icon-books" aria-hidden="true"><use xlinkHref="#books"></use></svg>
+                    <span>Intérêts</span>
                 </a>
             </li>
         </ol>

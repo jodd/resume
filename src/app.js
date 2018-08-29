@@ -9,9 +9,9 @@ import Header from 'header'
 import Footer from 'footer'
 
 // icons
-( icons => icons.keys().forEach( icons ))(
+(icons => icons.keys().forEach(icons))(
     require.context( './icons', false,
-        /(location|mobile|mail|link|github|twitter|clock|codepen|profile|briefcase|graduation-cap|tools|chevron-right)\.svg$/ ))
+        /(location|mobile|mail|link|github|twitter|clock|codepen|profile|briefcase|graduation-cap|tools|chevron-right|books)\.svg$/ ))
 
 /* -------------------------------------------------------------------------- */
 
@@ -21,31 +21,20 @@ import Footer from 'footer'
 function init() {
 
     const W = window
-    let windowWidth = W.innerWidth // used to check if the window width has changed on resize
-    // let windowHeight = W.innerHeight // used to check if the window height has changed on resize
+    let windowWidth = W.innerWidth // used to check if the window width changed on resize
 
     // debounce the resize handler
-    // W.addEventListener( 'resize', debounce( e => {
-
-    //     // exit if the window size hasnt changed
-    //     if ( windowWidth === W.innerWidth && windowHeight === W.innerHeight ) return
-
-    //     (( windowWidth = W.innerWidth ) && ( windowHeight = W.innerHeight ))
-    //         && W.dispatchEvent( new Event( 'resized' ))
-    // }, 300 ))
-
-    // debounce the resize handler
-    W.addEventListener( 'resize', debounce( e => {
-        // exit if the window size hasnt changed
-        if ( windowWidth === W.innerWidth ) return
-        ( windowWidth = W.innerWidth ) && W.dispatchEvent( new Event( 'resized' ))
+    W.addEventListener('resize', debounce(e => {
+        // exit if the window width didn't changed
+        if (windowWidth === W.innerWidth) return
+        (windowWidth = W.innerWidth) && W.dispatchEvent(new Event('resized'))
     }, 300 ))
 
 }
 
 /* -------------------------------------------------------------------------- */
 export default props => (
-    <div className="page" ref={ () => init() }>
+    <div className="page" ref={() => init()}>
         <Header/>
         <main role="main">
 
@@ -127,16 +116,13 @@ export default props => (
                             3 ans
                         </p>
                         <p>
-                            <em>Agence Novacom</em>
-                            - appli <acronym title="Model View Controller">MVC</acronym> en Javascript (avec RequireJS)
+                            <em>Agence Novacom</em> - appli <acronym title="Model View Controller">MVC</acronym> en Javascript (avec RequireJS)
                         </p>
                         <p>
-                            <em>Agence Plan.Net</em>
-                            - refonte de l'interface du site <a href="https://www.aegps.com">aegps.com</a>
+                            <em>Agence Plan.Net</em> - refonte de l'interface du site <a href="https://www.aegps.com">aegps.com</a>
                         </p>
                         <p>
-                            <em>Agence Pixelis</em>
-                            - interface d'un réseau social communautaire
+                            <em>Agence Pixelis</em> - interface d'un réseau social communautaire
                         </p>
                     </div>
                     <div className="experience-card">
@@ -172,6 +158,20 @@ export default props => (
                     </p>
                     <p>Bon niveau en anglais.</p>
                 </div>
+            </section>
+
+            <section id="interests">
+                <h2 className="section-heading">
+                    <span>Intérêts</span>
+                </h2>
+                <ul className="inline-list">
+                    <li>Musique électro</li>
+                    <li>Gastronomie</li>
+                    <li>Bricolage</li>
+                    <li>Ecologie & <acronym title="Economie Sociale et Solidaire">ESS</acronym></li>
+                    <li>Yoga</li>
+                    <li>Minimalisme</li>
+                </ul>
             </section>
         </main>
         <Footer/>

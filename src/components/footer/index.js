@@ -10,6 +10,6 @@ import './index.css'
 
 export default props => (
     <footer role="contentinfo">
-        Crédit pictos <a href="https://icomoon.io/">icomoon</a>
+        <a href="https://github.com/jodd/resume">Code source</a> <i className="footer-separator">★</i> Crédit pictos&nbsp;: <a href="https://icomoon.io/">icomoon</a>
     </footer>
 )
