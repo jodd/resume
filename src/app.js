@@ -150,8 +150,8 @@ export default props => (
                         <strong>Langages&nbsp;:</strong> HTML, CSS, Javascript<br/>
                     </p>
                     <p>
-                        <strong>Outils&nbsp;:</strong> Node, NPM, Express, Webpack, Babel, jQuery, PostCSS<br/>
-                        J'utilise parfois&nbsp;: Lodash, Twig
+                        <strong>Outils&nbsp;:</strong> Node, Npm, Webpack, Babel, jQuery, PostCSS<br/>
+                        J'utilise parfois&nbsp;: React, Express, Lodash, Twig, Sass
                     </p>
                     <p>
                         <strong>Mes priorités&nbsp;:</strong> performance, expérience utilisateur, <acronym title="Search Engine Optimization">SEO</acronym> et accessibilité
