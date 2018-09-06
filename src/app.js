@@ -92,7 +92,7 @@ export default props => (
                                 interface d'un site Wordpress pour la Fondation Korian pour le Bien Vieillir
                             </li>
                             <li>
-                                présentation originale d'un <a href="http://rapportdactivite.groupe-bel.com/">rapport d'activité</a> pour le Groupe Bel
+                                développement de pages statiques pour les groupes SUEZ et Bel
                             </li>
                         </ul>
                     </div>
