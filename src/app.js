@@ -43,8 +43,8 @@ export default props => (
                     <span>Présentation</span>
                 </h2>
                 <div>
-                    <div className="section-highlight"
-                        dangerouslySetInnerHTML={{ __html: require( './posts/strengths.md' )}}></div>
+                    {/*<div className="section-highlight"
+                        dangerouslySetInnerHTML={{ __html: require( './posts/strengths.md' )}}></div>*/}
                     <div dangerouslySetInnerHTML={{ __html: require( './posts/profile.md' )}}></div>
                 </div>
             </section>
@@ -77,7 +77,7 @@ export default props => (
                         <ul>
                             <li>refonte de l'interface du site <a href="http://www.capital.fr/">capital.fr</a></li>
                             <li>maintenance des sites <a href="http://www.neonmag.fr/">neonmag.fr</a> et <a href="http://www.cuisineactuelle.fr/">cuisineactuelle.fr</a></li>
-                            <li>démo d'une interface en React pour une refonte des rubriques vidéo de plusieurs sites du groupe</li>
+                            <li>prototype d'une interface (React) pour une refonte des rubriques vidéo de plusieurs sites du groupe</li>
                         </ul>
                     </div>
                     <div className="experience-card">
