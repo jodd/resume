@@ -28,7 +28,13 @@ function setHeight() {
         const onscreenFooterHeight = Math.max( 0,
             W.innerHeight - footer.getBoundingClientRect().top )
 
-        header.style.maxHeight = W.innerHeight - onscreenFooterHeight + 'px'
+        let headerStyles = W.getComputedStyle(header)
+        let headerMarginTop = headerStyles.getPropertyValue('margin-top')
+        let headerMarginBottom = headerStyles.getPropertyValue('margin-bottom')
+        let headerMargins = parseInt(headerMarginTop) + parseInt(headerMarginBottom)
+        let maxHeight = W.innerHeight - onscreenFooterHeight - headerMargins
+
+        header.style.maxHeight = maxHeight + 'px'
 
         W.addEventListener( 'scroll', scrollHandler )
 
@@ -60,7 +66,7 @@ export default props => (
         <div>
             <img src={ProfileImg} alt="Joris Durand"/>
             <h1><span>Joris<br/>Durand</span></h1>
-            <strong>développeur</strong>
+            <strong>développeur web<br/>front-end</strong>
         </div>
         <div>
             <div>

@@ -15,7 +15,7 @@
     z-index: 1;
     @media (--large-screen) {
         width: var(--small-col-width);
-        top: calc(var(--gutter));
+        top: calc(var(--gutter) * 2);
         left: calc(100% - var(--small-col-width) - var(--gutter));
         bottom: inherit;
         box-shadow: none;

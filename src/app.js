@@ -54,7 +54,7 @@ export default props => (
                     <span>Formation</span>
                 </h2>
                 <div>
-                    <strong>Ingénieur NTIC</strong>, École d’ingénieurs ECE Paris
+                    <strong>Ingénieur informatique</strong>, École d’ingénieurs ECE Paris
                     <p>
                         Systèmes d’Information et Réseaux<br/>
                         Multimédia et Médias Numériques - Internet
@@ -147,14 +147,13 @@ export default props => (
                 </h2>
                 <div>
                     <p>
-                        <strong>Langages&nbsp;:</strong> HTML, CSS, Javascript<br/>
+                        <strong>Langages</strong>&nbsp;: HTML(5), CSS(3), Javascript (ES6)<br/>
                     </p>
                     <p>
-                        <strong>Outils&nbsp;:</strong> Node, Npm, Webpack, Babel, jQuery, PostCSS<br/>
-                        J'utilise parfois&nbsp;: React, Express, Lodash, Twig, Sass
+                        <strong>Stack actuelle</strong>&nbsp;: Node, Express, Webpack, React, PostCSS/cssnext<br/>
                     </p>
                     <p>
-                        <strong>Mes priorités&nbsp;:</strong> performance, expérience utilisateur, <acronym title="Search Engine Optimization">SEO</acronym> et accessibilité
+                        <strong>Mes priorités</strong>&nbsp;: performance, <acronym title="User Experience">UX</acronym>, <acronym title="Search Engine Optimization">SEO</acronym> et accessibilité
                     </p>
                     <p>Bon niveau en anglais.</p>
                 </div>
@@ -164,14 +163,14 @@ export default props => (
                 <h2 className="section-heading">
                     <span>Intérêts</span>
                 </h2>
-                <ul className="inline-list">
-                    <li>Musique électro</li>
-                    <li>Gastronomie</li>
-                    <li>Bricolage</li>
-                    <li>Ecologie & <acronym title="Economie Sociale et Solidaire">ESS</acronym></li>
-                    <li>Yoga</li>
-                    <li>Minimalisme</li>
-                </ul>
+                <div>
+                    <p>Amateur de <strong>musique électronique</strong>, j'aime passer du temps à peaufiner <a href="https://open.spotify.com/user/j0dd">mes playlists Spotify</a></p>
+                    <p>Avec une famille originaire du Gers, difficile de passer à côté de la <strong>gastronomie</strong>. J'aime cuisiner et (surtout) bien manger.</p>
+                    <p>Adepte du <strong><acronym title="Do It Yourslef">DIY</acronym></strong>, je suis toujours en quête de palettes dans mon quartier pour mon futur canapé/lit/table.</p>
+                    <p>Je suis sensible aux problématiques liés à l'<strong>environnement</strong>, je m'intéresse aux solutions pour consommer responsablement.</p>
+                    <p>Je fais du <strong>Yoga</strong>, 10 minutes tous les matins pour bien commencer la journée.</p>
+                    <p>Et pour mon chez-moi j'adopte les principes du <strong>minimalisme</strong>, ça me simplifie la vie&nbsp;!</p>
+                </div>
             </section>
         </main>
         <Footer/>

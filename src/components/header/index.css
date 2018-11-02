@@ -6,14 +6,12 @@
 
 [role="banner"] {
     max-width: var(--col-width);
-    padding: var(--gutter) 0;
-    margin: 0 auto;
+    margin: calc(var(--gutter) * 2) auto var(--gutter);
     @media (--medium-screen) {
         position: fixed;
         top: 0;
         left: var(--gutter);
         width: var(--col-width);
-        margin: inherit;
         overflow-y: auto;
         max-height: 100%;
         -webkit-overflow-scrolling: touch;
@@ -45,13 +43,15 @@
 }
 
 [role="banner"] > div:first-child img {
-    width: 150px;
+    width: 180px;
+    height: 180px;
     box-shadow: 0 1px 6px rgba(0,0,0,.45);
 }
 
 [role="banner"] > div:first-child strong {
     color: darkgrey;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
 }
 
 [role="banner"] > div:nth-child(2) {

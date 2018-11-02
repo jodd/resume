@@ -19,11 +19,11 @@
     margin: var(--gutter) auto 0;
     @media (--medium-screen) {
         max-width: inherit;
-        margin: var(--gutter) var(--gutter) 0 calc(var(--col-width) + var(--gutter) * 2);
+        margin: calc(var(--gutter) * 2) var(--gutter) 0 calc(var(--col-width) + var(--gutter) * 2);
     }
     @media (--large-screen) {
         max-width: calc(100% - var(--col-width) - var(--small-col-width) - var(--gutter) * 4);
-        margin: var(--gutter) auto 0;
+        margin: calc(var(--gutter) * 2) auto 0;
         transform: translateX(calc((var(--col-width) - var(--small-col-width)) / 2));
     }
     @media (--max-width) {
