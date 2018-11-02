@@ -213,6 +213,10 @@ p + p {
     margin-top: 1em;
 }
 
+acronym {
+    cursor: help;
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -322,7 +326,7 @@ time {
 
     [role="main"] {
         max-width: inherit;
-        margin: 30px 30px 0 360px;
+        margin: 60px 30px 0 360px;
     }
 }
 
@@ -330,7 +334,7 @@ time {
 
     [role="main"] {
         max-width: calc(100% - 660px);
-        margin: 30px auto 0;
+        margin: 60px auto 0;
         -webkit-transform: translateX(30px);
                 transform: translateX(30px);
     }
@@ -712,7 +716,7 @@ body:before {
 
     .side-nav {
         width: 240px;
-        top: 30px;
+        top: 60px;
         left: calc(100% - 270px);
         bottom: inherit;
         -webkit-box-shadow: none;
@@ -880,8 +884,7 @@ body:before {
 
 [role="banner"] {
     max-width: 300px;
-    padding: 30px 0;
-    margin: 0 auto;
+    margin: 60px auto 30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -891,7 +894,6 @@ body:before {
         top: 0;
         left: 30px;
         width: 300px;
-        margin: inherit;
         overflow-y: auto;
         max-height: 100%;
         -webkit-overflow-scrolling: touch;
@@ -931,14 +933,16 @@ body:before {
 }
 
 [role="banner"] > div:first-child img {
-    width: 150px;
+    width: 180px;
+    height: 180px;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .45);
             box-shadow: 0 1px 6px rgba(0, 0, 0, .45);
 }
 
 [role="banner"] > div:first-child strong {
     color: darkgrey;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
 }
 
 [role="banner"] > div:nth-child(2) {
@@ -1032,7 +1036,8 @@ body:before {
 [role="banner"] > div:nth-child(3) a + a {
     margin-left: 28.8px;
     margin-left: 1.8rem;
-}/* ==========================================================================
+}
+/* ==========================================================================
     Footer styles
    ========================================================================== */
 
@@ -1079,7 +1084,7 @@ body:before {
 [role="contentinfo"] {
     background-color: rgb(36, 36, 36);
     padding: 30px 30px 45px;
-    margin: 90px -30px 0;
+    margin: 90px -var(--gutter) 0;
     text-align: center;
 }
 
