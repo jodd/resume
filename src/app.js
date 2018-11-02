@@ -146,15 +146,10 @@ export default props => (
                     <span>Compétences</span>
                 </h2>
                 <div>
-                    <p>
-                        <strong>Langages</strong>&nbsp;: HTML(5), CSS(3), Javascript (ES6)<br/>
-                    </p>
-                    <p>
-                        <strong>Stack actuelle</strong>&nbsp;: Node, Express, Webpack, React, PostCSS/cssnext<br/>
-                    </p>
-                    <p>
-                        <strong>Mes priorités</strong>&nbsp;: performance, <acronym title="User Experience">UX</acronym>, <acronym title="Search Engine Optimization">SEO</acronym> et accessibilité
-                    </p>
+                    <p><strong>Langages</strong>&nbsp;: HTML(5), CSS(3), Javascript (ES6)</p>
+                    <p><strong>Technos/outils</strong>&nbsp;: Node, Express, Webpack, React, PostCSS/cssnext, jQuery, Git</p>
+                    <p>J'ai aussi utilisé&nbsp;: Less, Sass, Stylus, Twig, Grunt, Gulp, RequireJS, <acronym title="Subversion">SVN</acronym></p>
+                    <p><strong>Mes priorités</strong>&nbsp;: performance, <acronym title="User Experience">UX</acronym>, <acronym title="Search Engine Optimization">SEO</acronym> et accessibilité</p>
                     <p>Bon niveau en anglais.</p>
                 </div>
             </section>
@@ -167,7 +162,7 @@ export default props => (
                     <p>Amateur de <strong>musique électronique</strong>, j'aime passer du temps à peaufiner <a href="https://open.spotify.com/user/j0dd">mes playlists Spotify</a></p>
                     <p>Avec une famille originaire du Gers, difficile de passer à côté de la <strong>gastronomie</strong>. J'aime cuisiner et (surtout) bien manger.</p>
                     <p>Adepte du <strong><acronym title="Do It Yourslef">DIY</acronym></strong>, je suis toujours en quête de palettes dans mon quartier pour mon futur canapé/lit/table.</p>
-                    <p>Je suis sensible aux problématiques liés à l'<strong>environnement</strong>, je m'intéresse aux solutions pour consommer responsablement.</p>
+                    <p>Je suis sensible aux problématiques liés à l'<strong>environnement</strong>, je m'intéresse aux solutions pour consommer de manière responsable.</p>
                     <p>Je fais du <strong>Yoga</strong>, 10 minutes tous les matins pour bien commencer la journée.</p>
                     <p>Et pour mon chez-moi j'adopte les principes du <strong>minimalisme</strong>, ça me simplifie la vie&nbsp;!</p>
                 </div>

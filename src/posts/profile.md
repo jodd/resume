@@ -8,5 +8,5 @@ Ma facilité à dialoguer me permet de m'intégrer rapidement dans une équipe.
 Je suis rigoureux et toujours très impliqué dans mes projets. On a souvent souligné ma motivation et mon dynamisme.
 
 Mon objectif premier est de fournir une bonne expérience utilisateur. Pour cela je m'efforce de produire des sites responsives, ergonomiques et performants.
-J'accorde aussi de l'importance à l'accessibilité numérique. Je pense que c'est le devoir des développeurs de s'assurer que le web devienne un espace accessible à tous.
+J'accorde aussi de l'importance à l'accessibilité numérique. Je pense que c'est le devoir des développeurs de s'assurer que le web devienne un espace ouvert à tous.
 Egalement adepte des bonnes pratiques, je m'efforce de produire un code optimisé, commenté et facilement maintenable.
