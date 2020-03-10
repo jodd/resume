@@ -66,7 +66,7 @@ export default props => (
         <div>
             <img src={ProfileImg} alt="Joris Durand"/>
             <h1><span>Joris<br/>Durand</span></h1>
-            <strong>développeur web<br/>front-end</strong>
+            <strong>développeur web<br/>front</strong>
         </div>
         <div>
             <div>
@@ -82,10 +82,10 @@ export default props => (
                     <svg className="icon-mail" aria-hidden="true"><use xlinkHref="#mail"></use></svg>
                     <a href="mailto:joris.durand@free.fr">joris.durand@free.fr</a>
                 </p>
-                <p>
+                {/*<p>
                     <svg className="icon-link" aria-hidden="true"><use xlinkHref="#link"></use></svg>
                     <a href="http://jodd.github.io">http://jodd.github.io</a>
-                </p>
+                </p>*/}
             </div>
         </div>
         <div>

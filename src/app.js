@@ -68,6 +68,20 @@ export default props => (
                 </h2>
                 <div>
                     <div className="experience-card">
+                        <strong>Le Slip Français</strong>
+                        <p className="time-range">
+                            Depuis <time dateTime="2018-12">décembre 2018</time>
+                            <svg className="icon-clock" aria-hidden="true"><use xlinkHref="#clock"></use></svg>
+                            1 an 3 mois
+                        </p>
+                        <ul>
+                          <li>maintenance du <a href="https://leslipfrancais.fr" title="Le Slip Français">e-shop</a> (refonte des pages, débug et développement de features)</li>
+                          <li>mise en place de l'environnement de développement (config du serveur de dev, nettoyage et réorganisation du code)</li>
+                          <li>intégration de React au projet, et développement de plusieurs composants (moteur de recherche Algolia)</li>
+                          <li>mise en place d'un workflow avec les designers (animation des réunions, outil de partage des maquettes)</li>
+                        </ul>
+                    </div>
+                    <div className="experience-card">
                         <strong>Groupe de presse Prisma Media</strong>
                         <p className="time-range">
                             <time dateTime="2016-05">Mai 2016</time> - <time dateTime="2017-09">septembre 2017</time>
@@ -75,68 +89,19 @@ export default props => (
                             1 an 4 mois
                         </p>
                         <ul>
-                            <li>refonte de l'interface du site <a href="http://www.capital.fr/">capital.fr</a></li>
+                            <li>refonte du site <a href="http://www.capital.fr/">capital.fr</a></li>
                             <li>maintenance des sites <a href="http://www.neonmag.fr/">neonmag.fr</a> et <a href="http://www.cuisineactuelle.fr/">cuisineactuelle.fr</a></li>
-                            <li>prototype d'une interface (React) pour une refonte des rubriques vidéo de plusieurs sites du groupe</li>
+                            <li>développement d'un proto d'une plateforme vidéo (React)</li>
                         </ul>
                     </div>
                     <div className="experience-card">
-                        <strong>Agence Ecedi</strong>
+                        <strong>Freelance & agences</strong>
                         <p className="time-range">
-                            <time dateTime="2015-02">Février</time> - <time dateTime="2015-05">mai 2015</time>
+                            <time dateTime="2008-01">Janvier 2008</time> - <time dateTime="2015-05">mai 2015</time>
                             <svg className="icon-clock" aria-hidden="true"><use xlinkHref="#clock"></use></svg>
-                            4 mois
+                            7 ans 4 mois
                         </p>
-                        <ul>
-                            <li>
-                                interface d'un site Wordpress pour la Fondation Korian pour le Bien Vieillir
-                            </li>
-                            <li>
-                                développement de pages statiques pour les groupes SUEZ et Bel
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="experience-card">
-                        <strong>Agence Clever Age</strong>
-                        <p className="time-range">
-                            <time dateTime="2013-07">Juillet 2013</time> - <time dateTime="2014-03">mars 2014</time>
-                            <svg className="icon-clock" aria-hidden="true"><use xlinkHref="#clock"></use></svg>
-                            8 mois
-                        </p>
-                        <ul>
-                            <li>maintenance du site e-commerce de Longchamp</li>
-                            <li>API en Javascript pour la génération des visuels sur une <a href="http://fr.longchamp.com/pliage/personnaliser">appli de personnalisation de produits</a> pour Longchamp</li>
-                        </ul>
-                    </div>
-                    <div className="experience-card">
-                        <strong>Freelance</strong>
-                        <p className="time-range">
-                            <time dateTime="2010-08">Août 2010</time> - <time dateTime="2013-07">juillet 2013</time>
-                            <svg className="icon-clock" aria-hidden="true"><use xlinkHref="#clock"></use></svg>
-                            3 ans
-                        </p>
-                        <p>
-                            <em>Agence Novacom</em> - appli <acronym title="Model View Controller">MVC</acronym> en Javascript (avec RequireJS)
-                        </p>
-                        <p>
-                            <em>Agence Plan.Net</em> - refonte de l'interface du site <a href="https://www.aegps.com">aegps.com</a>
-                        </p>
-                        <p>
-                            <em>Agence Pixelis</em> - interface d'un réseau social communautaire
-                        </p>
-                    </div>
-                    <div className="experience-card">
-                        <strong>Agence Noven</strong>
-                        <p className="time-range">
-                            <time dateTime="2008-01">Janvier 2008</time> - <time dateTime="2009-05">mai 2009</time>
-                            <svg className="icon-clock" aria-hidden="true"><use xlinkHref="#clock"></use></svg>
-                            1 an 3 mois
-                        </p>
-                        <ul>
-                            <li>interface de l'espace presse des chaînes du groupe Canal+</li>
-                            <li>interface de l'espace presse de La Poste</li>
-                            <li>mission chez SFR pour l'intégration de pages statiques sur la boutique en ligne</li>
-                        </ul>
+                        <p>Travaux d'intégration, refonte et développement d'interfaces (e-shop, site vitrine, blog...)</p>
                     </div>
                 </div>
             </section>
@@ -146,8 +111,8 @@ export default props => (
                     <span>Compétences</span>
                 </h2>
                 <div>
-                    <p><strong>Langages</strong>&nbsp;: HTML(5), CSS(3), Javascript (ES6)</p>
-                    <p><strong>Technos/outils</strong>&nbsp;: Node, Express, Webpack, React, PostCSS/cssnext, jQuery, Git</p>
+                    <p><strong>Langages</strong>&nbsp;: HTML, CSS, JS</p>
+                    <p><strong>Technos/outils</strong>&nbsp;: Node, Express, Webpack, React, PostCSS, jQuery, Git</p>
                     <p>J'ai aussi utilisé&nbsp;: Less, Sass, Stylus, Twig, Grunt, Gulp, RequireJS, <acronym title="Subversion">SVN</acronym></p>
                     <p><strong>Mes priorités</strong>&nbsp;: performance, <acronym title="User Experience">UX</acronym>, <acronym title="Search Engine Optimization">SEO</acronym> et accessibilité</p>
                     <p>Bon niveau en anglais.</p>
